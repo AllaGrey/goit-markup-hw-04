@@ -100,6 +100,7 @@ ul, ol {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
 }
 
 .header-menu-list {
@@ -125,11 +126,8 @@ ul, ol {
     color: var(--text-color);
 }
 
-.header-list :hover {
-    color: var(--brand-color);
-}
-
-.header-list :focus {
+.header-link:hover,
+.header-link:focus {
     color: var(--brand-color);
 }
 
@@ -254,20 +252,16 @@ ul, ol {
     gap: 30px;
 }
 
-.team-item {
-    padding-bottom: 30px;
-}
-
 .team-card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
 }
 
-.team-image {
-    margin-bottom: 30px;
+.team-card-description {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-
 .team-name {
     font-weight: 500;
     font-size: 16px;
@@ -289,7 +283,6 @@ ul, ol {
     letter-spacing: 0.03em;
     color: var(--text-color);
     width: calc((100% - 90px) / 4);
-    margin-bottom: 16px;
 }
 
 .soc-link-list {
@@ -299,29 +292,25 @@ ul, ol {
     
 
 }
-.soc-link-item {
+
+.soc-link-icon-team {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     display: inline-block;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
-}
-
-.soc-link-icon-team {
     fill: var(--icons-grey-color);
-    max-height: 20px;
 }
 
-.soc-link-item:hover,
-.soc-link-item:focus {
+.soc-link-icon-team:hover,
+.soc-link-icon-team:focus {
     background-color: var(--brand-color);
 }
 
-.soc-link-item:hover .soc-link-icon-team,
-.soc-link-item:focus .soc-link-icon-team {
+.soc-link-icon-team:hover,
+.soc-link-icon-team:focus {
     fill: #FFFFFF
 } 
 
@@ -334,7 +323,6 @@ ul, ol {
     justify-content: space-between;
 }
 
-
 .clients-icons {
     width: 170px;
     height: 92px;
@@ -344,15 +332,16 @@ ul, ol {
     align-items: center;
     justify-content: center;
     fill: var(--icons-grey-color);
-}
-
-/* PORTFOLIO */
+    }
 
 .clients-icons:hover,
-.features-icons:focus {
+.clients-icons:focus {
     fill: var(--brand-color);
     border-color: var(--brand-color);
-}
+    }
+
+
+/* PORTFOLIO */
 
 
 .filter-list {
@@ -448,14 +437,10 @@ ul, ol {
     background-color: #2F303A;
 }
 
-.address :hover {
+.address-link:hover,
+.address-link:focus {
     color: var(--brand-color);
 }
-
-.address :focus {
-    color: var(--brand-color);
-}
-
 .address {
     font-style: normal;
     font-size: 14px;
@@ -463,7 +448,6 @@ ul, ol {
     letter-spacing: 0.03em;
     display: block;
     display: flex;
-    /* max-width: 100px; */
 }
 
 .address-item:not(:last-child) {
@@ -500,7 +484,6 @@ color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     margin-bottom: 20px;
 }
-
 
 .soc-link-icon-footer {
     width: 44px;
